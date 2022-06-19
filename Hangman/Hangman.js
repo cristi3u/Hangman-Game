@@ -27,7 +27,7 @@ function verifyTheWord() {
 			++goodGameCounter;
 		}
 	}
-	if (goodGameCounter == theNormalWordLength - 3) {
+	if (goodGameCounter == theNormalWordLength - 2) {
 		document.getElementById('finalResult').innerHTML = "CONGRATULATION YOU HAVE WON";		
 	}
 	for (let i = 1; i < theNormalWordLength - 1; ++i) {
