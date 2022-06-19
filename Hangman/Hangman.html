@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Hangman.css">
+    <title>Hangman Game!</title>
+  </head>
+  <br>
+  <br>
+  <body>
+    <div class="textCenter">
+    <h1>Hangman Game</h1>
+    <br>
+    <div class="textCenter" id="finalResult"></div>
+    <br>
+    <br>
+    <div class="textCenter" id="livesLeft"></div>
+    <br>
+    </div>
+    <br>
+    <div class="textCenter">
+    <label for="add">Add the word you want to play with!</label>
+    <br>
+    <input type="password" id="addID">
+    <input id="addButtonID" type="submit" value="Add" onclick="return addTheWord();">
+    </div>
+    <br>
+    <br>
+    <br>
+    <h4 id="hangmanWord" class="textCenter"></h4>
+    <br>
+    <br>
+    <br>
+    <div class="textCenter">
+    <label for="search">Enter the letters that might be in the word!</label>
+    <br>
+    <input type="text" id="searchID">
+    <input id="SearchButtonID" type="submit" value="Verify" onclick="return verifyTheWord();">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4 class="textCenter">Wrong letters :</h4>
+    <br>
+    <br>
+    <div id="wrongLettersId" class="textCenter"></div>
+    </div>
+    <script src="./Hangman.js"></script>
+  </body>
+</html>

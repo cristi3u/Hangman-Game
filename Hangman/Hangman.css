@@ -1,0 +1,24 @@
+.textCenter {
+  text-align: center;
+}
+
+#finalResult{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#livesLeft {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}
+
+#wrongLettersId {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+}
