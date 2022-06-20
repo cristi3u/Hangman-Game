@@ -15,6 +15,7 @@ function addTheWord() {
 	theEditedWord[i] = '_';
     }
     document.getElementById('hangmanWord').innerHTML = theEditedWord.join(' ');
+    document.getElementById('addButtonID').disabled = true;
 }
 
 function verifyTheWord() {
