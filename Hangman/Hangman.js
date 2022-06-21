@@ -1,8 +1,8 @@
-let lifes = 7;
+let lives = 7;
 const wrongLetter = [];
 const theNormalWord = [];
 const theEditedWord = [];
-document.getElementById('livesLeft').innerHTML = "Lives left : " + lifes;
+document.getElementById('livesLeft').innerHTML = "Lives left : " + lives;
 
 function addTheWord() {
     let word = document.getElementById('addID').value;
@@ -40,15 +40,15 @@ function verifyTheWord() {
 	document.getElementById('finalResult').innerHTML = "CONGRATULATION YOU HAVE WON!";
     }
     if (wrongLettersCounter == theNormalWordLength - 2) {
-	--lifes;
-	document.getElementById('livesLeft').innerHTML = "Lives left : " + lifes;
+	--lives;
+	document.getElementById('livesLeft').innerHTML = "Lives left : " + lives;
 	let list = document.getElementById("wrongLettersId");
 	wrongLetter.push(letter);
 	let li = document.createElement("li");
 	li.innerText = letter;
 	list.appendChild(li);
     }
-    if (lifes == 0) {
+    if (lives == 0) {
 	document.getElementById('finalResult').innerHTML = "GAME OVER, THE WORD WAS : " + theNormalWord.join('');
     }
 }
